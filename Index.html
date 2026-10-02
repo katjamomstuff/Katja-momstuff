@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Katja.momstuff | Mama & UGC Content</title>
+
+<meta name="description" content="Katja.momstuff – authentischer Mama-, Familien-, Rezept- und BLW-Content aus Wien.">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#fbf8f3;
+  color:#4b3b31;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* NAVIGATION */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(251,248,243,.95);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #e7dbcf;
+}
+
+nav{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.menu{
+  display:flex;
+  gap:25px;
+  font-size:14px;
+}
+
+.menu a:hover{
+  opacity:.6;
+}
+
+/* HERO */
+
+.hero{
+  background:#f3e8dc;
+  padding:110px 0 100px;
+}
+
+.small-title{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+  color:#8b7565;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(50px,8vw,85px);
+  line-height:1.02;
+  margin:20px 0;
+}
+
+.hero-text{
+  max-width:650px;
+  font-size:19px;
+  color:#756458;
+}
+
+.button{
+  display:inline-block;
+  margin-top:28px;
+  padding:15px 25px;
+  background:#4b3b31;
+  color:white;
+  border-radius:50px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.button:hover{
+  transform:translateY(-2px);
+}
+
+/* SECTIONS */
+
+section{
+  padding:90px 0;
+}
+
+h2{
+  font-family:Georgia,serif;
+  font-size:48px;
+  line-height:1.1;
+  margin:15px 0 30px;
+}
+
+.intro{
+  max-width:700px;
+  color:#756458;
+}
+
+/* ABOUT */
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.quote{
+  background:#f3e8dc;
+  padding:50px;
+  border-radius:30px;
+  font-family:Georgia,serif;
+  font-size:30px;
+  line-height:1.3;
+}
+
+/* CARDS */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  border:1px solid #e7dbcf;
+  border-radius:25px;
+  padding:32px;
+  min-height:220px;
+}
+
+.card-number{
+  font-size:13px;
+  color:#a58c78;
+  font-weight:bold;
+}
+
+.card h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin:20px 0 12px;
+}
+
+.card p{
+  color:#756458;
+}
+
+/* COOPERATION */
+
+.cooperation{
+  background:#4b3b31;
+  color:white;
+  border-radius:35px;
+  padding:65px;
+}
+
+.cooperation .small-title{
+  color:#d8c6b5;
+}
+
+.cooperation p{
+  color:#e8ddd4;
+  max-width:650px;
+}
+
+.cooperation .button{
+  background:#fbf8f3;
+  color:#4b3b31;
+}
+
+/* CONTACT */
+
+.contact-box{
+  background:#f3e8dc;
+  border-radius:30px;
+  padding:55px;
+}
+
+.email{
+  display:inline-block;
+  margin-top:20px;
+  font-size:20px;
+  font-weight:bold;
+  border-bottom:1px solid #4b3b31;
+}
+
+/* LEGAL */
+
+.legal{
+  background:#f1ebe4;
+}
+
+.legal h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin:30px 0 10px;
+}
+
+.legal p{
+  color:#756458;
+  margin-bottom:12px;
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid #e7dbcf;
+  padding:30px 0;
+  font-size:13px;
+  color:#817267;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.footer-links{
+  display:flex;
+  gap:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:750px){
+
+  .menu{
+    display:none;
+  }
+
+  .hero{
+    padding:75px 0;
+  }
+
+  section{
+    padding:65px 0;
+  }
+
+  h2{
+    font-size:38px;
+  }
+
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .cooperation,
+  .contact-box{
+    padding:35px 25px;
+  }
+
+  .quote{
+    padding:35px;
+    font-size:25px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+
+<a class="logo" href="#start">
+katja.momstuff
+</a>
+
+<div class="menu">
+<a href="#ueber">Über mich</a>
+<a href="#content">Content</a>
+<a href="#kooperation">Kooperation</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+
+</nav>
+</header>
+
+
+<main>
+
+<!-- STARTSEITE -->
+
+<section class="hero" id="start">
+
+<div class="container">
+
+<div class="small-title">
+Mama · Familie · UGC · Wien
+</div>
+
+<h1>
+Moments that feel<br>
+like real life.
+</h1>
+
+<p class="hero-text">
+Authentischer Content rund um Mama-Alltag,
+Familienmomente, einfache Rezepte und BLW –
+persönlich, natürlich und nahbar.
+</p>
+
+<a class="button"
+href="mailto:katja.momstuff.ugc@gmail.com?subject=Kooperationsanfrage%20Katja.momstuff">
+Kooperation anfragen
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ÜBER MICH -->
+
+<section id="ueber">
+
+<div class="container about">
+
+<div>
+
+<div class="small-title">
+Hallo, ich bin Katja
+</div>
+
+<h2>
+Familienalltag,<br>
+wie er wirklich ist.
+</h2>
+
+<p class="intro">
+Auf katja.momstuff dreht sich alles um
+authentische Einblicke in den Mama- und
+Familienalltag, alltagstaugliche Rezeptideen
+und Inspiration rund um BLW.
+</p>
+
+<br>
+
+<p class="intro">
+Für Marken entsteht natürlicher Content,
+der sich in echte Alltagssituationen einfügt
+und Produkte authentisch präsentiert.
+</p>
+
+</div>
+
+<div class="quote">
+„Echter Alltag.
+Echte Momente.
+Content, der sich
+nach Zuhause anfühlt.“
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTENT -->
+
+<section id="content">
+
+<div class="container">
+
+<div class="small-title">
+Content & Leistungen
+</div>
+
+<h2>
+Content, der zu Familien passt.
+</h2>
+
+<p class="intro">
+Authentischer Social-Media- und UGC-Content
+für Marken, die Familien erreichen möchten.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-number">01</div>
+
+<h3>
+Mama Content
+</h3>
+
+<p>
+Authentische und relatable Einblicke
+in den Familienalltag – nahbar,
+natürlich und persönlich.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">02</div>
+
+<h3>
+Rezepte & Ideen
+</h3>
+
+<p>
+Einfache Inspiration für Familien –
+von alltagstauglichen Rezepten
+bis zu kreativen Ideen.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">03</div>
+
+<h3>
+BLW Content
+</h3>
+
+<p>
+Content rund um Baby-led Weaning,
+Essen und gemeinsame
+Familienmomente.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- KOOPERATION -->
+
+<section id="kooperation">
+
+<div class="container">
+
+<div class="cooperation">
+
+<div class="small-title">
+Für Marken
+</div>
+
+<h2>
+Du möchtest mit
+katja.momstuff
+zusammenarbeiten?
+</h2>
+
+<p>
+Du hast ein Produkt oder eine Marke,
+die zu meiner Community passt?
+Schreib mir deine Anfrage per E-Mail
+mit den wichtigsten Informationen zur
+gewünschten Zusammenarbeit.
+</p>
+
+<a class="button"
+href="mailto:katja.momstuff.ugc@gmail.com?subject=Kooperationsanfrage%20Katja.momstuff">
+Anfrage senden
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- KONTAKT -->
+
+<section id="kontakt">
+
+<div class="container">
+
+<div class="contact-box">
+
+<div class="small-title">
+Kontakt
+</div>
+
+<h2>
+Lass uns zusammenarbeiten.
+</h2>
+
+<p class="intro">
+Kooperationsanfragen und Anfragen zu
+Content-Projekten gerne per E-Mail.
+</p>
+
+<a class="email"
+href="mailto:katja.momstuff.ugc@gmail.com">
+katja.momstuff.ugc@gmail.com
+</a>
+
+<p style="margin-top:25px;">
+Instagram: @katja.momstuff<br>
+TikTok: @katja.momstuff
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- IMPRESSUM / DATENSCHUTZ -->
+
+<section class="legal">
+
+<div class="container">
+
+<div class="small-title">
+Rechtliches
+</div>
+
+<h2>
+Impressum
+</h2>
+
+<p>
+<strong>Katja Marie Schmidt</strong><br>
+Rosa-Jochmann-Ring 3/10/14<br>
+Wien, Österreich
+</p>
+
+<p>
+<strong>Unternehmensgegenstand:</strong><br>
+Werbeagentur
+</p>
+
+<p>
+<strong>E-Mail:</strong><br>
+katja.momstuff.ugc@gmail.com
+</p>
+
+<p>
+<strong>Mitgliedschaft:</strong><br>
+Wirtschaftskammer Wien,
+Fachgruppe Werbung und Marktkommunikation
+</p>
+
+<p>
+<strong>Gewerbebehörde:</strong><br>
+Magistrat der Stadt Wien
+</p>
+
+<p>
+<strong>Berufsrecht:</strong><br>
+Gewerbeordnung (GewO)
+</p>
+
+
+<h2 style="margin-top:70px;">
+Datenschutz
+</h2>
+
+<h3>Verantwortliche</h3>
+
+<p>
+Katja Marie Schmidt<br>
+Rosa-Jochmann-Ring 3/10/14<br>
+Wien, Österreich<br>
+katja.momstuff.ugc@gmail.com
+</p>
+
+<h3>Kontakt per E-Mail</h3>
+
+<p>
+Wenn du per E-Mail Kontakt aufnimmst,
+werden die von dir übermittelten
+personenbezogenen Daten zur Bearbeitung
+deiner Anfrage verarbeitet.
+</p>
+
+<h3>Website und Cookies</h3>
+
+<p>
+Diese Website verwendet in diesem
+Entwurf keine Analyse- oder
+Marketing-Tracking-Dienste.
+Vor Veröffentlichung muss diese
+Datenschutzerklärung an den tatsächlich
+verwendeten Hostinganbieter und alle
+tatsächlich eingesetzten Dienste
+angepasst werden.
+</p>
+
+<h3>Social Media</h3>
+
+<p>
+Instagram und TikTok sind lediglich
+als Verweise vorgesehen. Es werden
+keine Social-Media-Feeds eingebettet.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer">
+
+<div>
+© 2026 katja.momstuff
+</div>
+
+<div class="footer-links">
+<a href="#start">Nach oben</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#ueber">Über mich</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
